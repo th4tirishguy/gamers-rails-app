@@ -1,0 +1,19 @@
+ul.players-list {
+	list-style: none;
+}
+ul.players-list li {
+	margin-bottom: 10px;
+}
+ul.players-list li span {
+	width: 200px;
+	background-color: #eeeeee;
+	display: table-cell;
+}
+ul.players-list li span:last-child {
+	padding-right: 0px;
+}
+
+ul.players-list li span.title-text {
+	font-size: 1.4em;
+	font-weight: bold;
+}
