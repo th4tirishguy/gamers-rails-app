@@ -8,9 +8,15 @@ $(document).ready(function($) {
 				player['name'] = el['name'];
 				player['system'] = el['system'];
 				player['country'] = el['country'];
-				player['microphone'] = el['microphone'];
+				if (el['microphone'] == true) {
+					player['microphone'] = 'Yes';
+				}
+				else {
+					player['microphone'] = 'No';
+				}
+				//player['microphone'] = el['microphone'];
 				$("#players-list").append('<li id="' + player['system'] + '""><span class="system">' + player['system'] + '</span>' + 
-					'<span>' + player['name'] + '</span><span>' + player['country'] + '</span></li>');
+					'<span>' + player['name'] + '</span><span>' + player['country'] + '</span><span>' + player['microphone'] + '</li>');
 				//players.push(player); 
 				//console.log(el['name']);
 			});
